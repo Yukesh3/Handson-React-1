@@ -53,10 +53,9 @@ body {
     width: 37vw;
     height: 33vh;
     border-radius: 20px;
-    background-color: lightblue;
-    display: none;
+    background-color: lightcoral;
     position: absolute;
-    top: 356px;
+    top: 334px;
     left: 45px;
     padding: 30px;
     line-height: 40px;
@@ -71,10 +70,9 @@ body {
     width: 37vw;
     height: 33vh;
     border-radius: 20px;
-    background-color: lightpink;
-    display: none;
+    background-color: lightskyblue;
     position: absolute;
-    top: 356px;
+    top: 334px;
     left: 845px;
     padding: 30px;
     line-height: 40px;

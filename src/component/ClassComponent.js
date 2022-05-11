@@ -2,17 +2,11 @@ import React, { Component } from 'react'
 
 
 export default class ClassComponent extends Component {
+
   render() {
-
-    const modal_2 = () => {
-      const one = document.getElementById('open2');
-      one.style.display = "block";
-    }
-
 
     return (
       <>
-        <button className='btn2' onClick={() => modal_2()}>Class Component</button>
 
 
         <div id='open2' className='box_2'>

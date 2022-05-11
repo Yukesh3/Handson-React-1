@@ -3,16 +3,9 @@ import React from 'react'
 
 const Functional = () => {
 
-  const modal_1 = () => {
-    const one = document.getElementById('open1');
-    one.style.display = "block";
-  }
-
-
   return (
     <>
 
-      <button onClick={() => modal_1()} className='btn1'>Functional Component</button>
 
       <div id='open1' className='box_1'>
 
