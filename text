@@ -1,0 +1,64 @@
+Student is requested to create the example by themselves for both type of components:
+
+HOC:
+ * Higher-order components (HOCs) in React were inspired by higher-order functions in JavaScript. A HOC is an advanced technique for reusing logic in React components. It is a pattern created out of React’s compositional nature.
+
+* Components take one or more components as arguments, and return a new upgraded component. 
+
+* HOCs are commonly used to design components with certain shared behavior in a way that makes them connected differently than normal state-to-props pattern.
+
+A HOC is structured like a higher-order function:
+
+* It is a component.
+* It takes another component as an argument.
+* Then, it returns a new component.
+* The component it returns can render the original component that was passed to it.
+
+
+Example:
+
+import React from 'react';
+
+const higherOrderComponent = (WrappedComponent) => {
+
+  class HOC extends React.Component {
+    render() {
+      return <WrappedComponent />;
+    }
+  }
+  return HOC;
+};
+
+
+Pure Components:
+
+* A React component is considered pure if it renders the same output for the same state and props. For this type of class component, React provides the PureComponent base class. Class components that extend the React. PureComponent class are treated as pure components.
+
+* If the previous value of state or props and the new value of state or props is the same, the component will not re-render itself. Since Pure Components restricts the re-rendering when there is no use of re-rendering of the component. 
+
+Example:
+
+
+class ImpureComponent extends React.PureComponent {
+  constructor() {
+    super();
+    this.state = {
+      counter: 0
+    }
+    
+    // The value of Counter is updated to same value during continues interval
+    
+    setInterval(() => {
+      this.setState({
+        counter: 0
+      });
+    }, 1000);
+  }
+  
+  render() {
+    
+    // This function wont be re-rendered in case when the new state is same as previous
+    
+    return <b>Counter Value: {this.state.counter}</b>
+  }
+}
