@@ -1,11 +1,7 @@
 Student is requested to create the example by themselves for both type of components:
 
 HOC:
- * Higher-order components (HOCs) in React were inspired by higher-order functions in JavaScript. A HOC is an advanced technique for reusing logic in React components. It is a pattern created out of React’s compositional nature.
-
-* Components take one or more components as arguments, and return a new upgraded component. 
-
-* HOCs are commonly used to design components with certain shared behavior in a way that makes them connected differently than normal state-to-props pattern.
+ * Higher-order components (HOCs) in React were inspired by higher-order functions in JavaScript. A HOC is an advanced technique for reusing logic in React components. 
 
 A HOC is structured like a higher-order function:
 
