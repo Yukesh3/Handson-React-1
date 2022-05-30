@@ -1,16 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './component/App';
+import One from './one';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-
 root.render(
-    <>
-
-    <App/>
-
-    </>
+  <>
+<One/>
+  </>
 )
 
 
